@@ -1,0 +1,250 @@
+.footer {
+  background-color: var(--secondary-black);
+  color: var(--white);
+  padding-top: 60px;
+  position: relative;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.footer-section {
+  margin-bottom: 30px;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--gold);
+  text-align: left;
+  text-shadow: 
+  0 2px 4px rgba(80, 55, 15, 0.55),
+  0 0 8px rgba(255, 215, 120, 0.35);
+
+}
+
+.footer-description {
+  color: #ccc;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  text-align: left;
+text-shadow:
+  0 1px 3px rgba(0, 0, 0, 0.35),
+  0 0 6px rgba(255, 255, 255, 0.12);
+}
+
+.contact-item svg {
+  color: var(--gold);
+  flex-shrink: 0;
+  text-shadow: 
+  0 2px 4px rgba(80, 55, 15, 0.55),
+  0 0 8px rgba(255, 215, 120, 0.35);
+
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  text-align: center;
+}
+
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+  text-shadow:
+  0 1px 3px rgba(0, 0, 0, 0.35),
+  0 0 6px rgba(255, 255, 255, 0.12);
+
+}
+
+.footer-links a:hover {
+  color: var(--gold);
+  padding-left: 5px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: var(--gold);
+  color: var(--primary-black);
+  transform: translateY(-3px);
+}
+
+.social-link.whatsapp:hover {
+  background-color: #25D366;
+}
+
+.newsletter h5 {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: var(--white);
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+  font-family: inherit;
+}
+
+.newsletter-form input::placeholder {
+  color: #999;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  background-color: var(--gold);
+  color: var(--primary-black);
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: var(--light-gold);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-bottom p {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.footer-policies {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-policies a {
+  color: #999;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-policies a:hover {
+  color: var(--gold);
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #128C7E;
+  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4);
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-policies {
+    justify-content: center;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.newsletter-popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: var(--gold);
+  color: var(--primary-black);
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+  max-width: 300px;
+  text-align: center;
+}
