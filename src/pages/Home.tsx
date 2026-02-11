@@ -4,6 +4,12 @@ import { Link } from 'react-router-dom';
 import { Check, Star, Clock, Award } from 'lucide-react';
 import Hero from '../components/Hero';
 import ServiceCard from '../components/ServiceCard';
+import one from '../assets/one.jpg';
+import two from '../assets/two.png';
+import three from '../assets/three.jpg';
+import four from '../assets/four.webp';
+import five from '../assets/five.webp';
+import six from '../assets/six.jpg';
 import './Home.css';
 
 // Custom hook for typing effect
@@ -87,7 +93,7 @@ const Home = () => {
       id: 1,
       title: 'POP Ceiling Installation',
       description: 'Professional installation of Plaster of Paris ceilings with modern designs',
-      image: '../src/assets/one.jpg',
+      image: one,
       features: ['Custom Designs', 'Moisture Resistant', 'LED Integration'],
       link: '/services/pop'
     },
@@ -95,7 +101,7 @@ const Home = () => {
       id: 2,
       title: 'Wall TV Console Design',
       description: 'Custom TV wall units with ambient lighting and storage',
-      image: '../src/assets/two.jpg',
+      image: two,
       features: ['Built-in Lighting', 'Storage Solutions', 'Wire Management'],
       link: '/services/tv-console'
     },
@@ -103,7 +109,7 @@ const Home = () => {
       id: 3,
       title: ' 3D Lighting Installation',
       description: 'Ambient and accent lighting solutions for your space',
-      image: '../src/assets/three.jpg',
+      image: three,
       features: ['LED Strips', 'Smart Lighting', 'Mood Lighting'],
       link: '/services/lighting'
     },
@@ -111,7 +117,7 @@ const Home = () => {
       id: 4,
       title: 'Wall Panels',
       description: '3D wall panels and decorative wall treatments',
-      image: '../src/assets/four.webp',
+      image: four,
       features: ['3D Effects', 'Sound Absorption', 'Easy Maintenance'],
       link: '/services/wall-panels'
     },
@@ -119,7 +125,7 @@ const Home = () => {
       id: 5,
       title: '2D Design Consultation',
       description: 'Expert consultation for complete interior design solutions',
-      image: '../src/assets/five.webp',
+      image: five,
       features: ['Space Planning', 'Color Schemes', 'Material Selection'],
       link: '/services/consultation'
     },
@@ -127,7 +133,7 @@ const Home = () => {
       id: 6,
       title: 'Custom Furniture',
       description: 'Bespoke furniture design and manufacturing services',
-      image: './src/assets/six.jpg',
+      image: six,
       features: ['Custom Design', 'Premium Materials', 'Artisan Craftsmanship'],
       link: '/services/furniture'
     },
