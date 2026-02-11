@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  Search, 
-  Filter, 
-  X, 
-  ChevronLeft, 
+import {
+  Search,
+  Filter,
+  X,
+  ChevronLeft,
   ChevronRight,
   Maximize2,
   Home,
@@ -12,6 +12,18 @@ import {
   Lightbulb,
   Grid3x3
 } from 'lucide-react';
+import L1 from '../assets/L1.jpg';
+import L2 from '../assets/L2.jpg';
+import L3 from '../assets/L3.jpg';
+import L4 from '../assets/L4.jpg';
+import L5 from '../assets/L5.jpg';
+import L6 from '../assets/L6.jpg';
+import L7 from '../assets/L7.jpg';
+import L8 from '../assets/L8.jpg';
+import L9 from '../assets/L9.jpg';
+import L10 from '../assets/L10.jpg';
+import L11 from '../assets/L11.jpg';
+import L12 from '../assets/L12.jpg';
 import './Gallery.css';
 
 const TypewriterText = ({ text, speed = 100, delay = 1000 }: { text: string; speed?: number; delay?: number }) => {
@@ -70,18 +82,18 @@ const Gallery = () => {
   ];
 
   const galleryItems = [
-    { id: 1, category: 'pop', title: 'Modern Living Room POP', description: 'Contemporary POP ceiling with LED lighting', tags: ['Modern', 'LED', 'Living Room'], image: '../src/assets/L1.jpg' },
-    { id: 2, category: 'tv', title: 'Minimalist TV Unit', description: 'Floating TV unit with hidden storage', tags: ['Minimalist', 'Storage', 'Modern'], image: '../src/assets/L2.jpg' },
-    { id: 3, category: 'lighting', title: 'Ambient Bedroom Lighting', description: 'Soft lighting for bedroom ambiance', tags: ['Ambient', 'Bedroom', 'Warm'], image: '../src/assets/L3.jpg' },
-    { id: 4, category: 'wall', title: '3D Feature Wall', description: 'Geometric 3D wall panels', tags: ['3D', 'Geometric', 'Feature Wall'], image: '../src/assets/L4.jpg' },
-    { id: 5, category: 'pop', title: 'Traditional POP Design', description: 'Classic POP ceiling with intricate patterns', tags: ['Traditional', 'Pattern', 'Classic'], image: '../src/assets/L5.jpg' },
-    { id: 6, category: 'tv', title: 'Entertainment Wall Unit', description: 'Complete entertainment wall with shelves', tags: ['Entertainment', 'Shelves', 'Complete'], image: '../src/assets/L6.jpg' },
-    { id: 7, category: 'lighting', title: 'Smart Home Lighting', description: 'Voice-controlled smart lighting system', tags: ['Smart', 'Voice Control', 'Modern'], image: '../src/assets/L7.jpg' },
-    { id: 8, category: 'commercial', title: 'Office POP Ceiling', description: 'Corporate office ceiling design', tags: ['Commercial', 'Office', 'Professional'], image: '../src/assets/l9.jpg' },
-    { id: 9, category: 'pop', title: 'Kitchen POP with Lighting', description: 'Functional kitchen ceiling with task lighting', tags: ['Kitchen', 'Task Lighting', 'Functional'], image: '../src/assets/L8.jpg' },
-    { id: 10, category: 'tv', title: 'Corner TV Unit', description: 'Space-saving corner TV installation', tags: ['Corner', 'Space Saving', 'Compact'], image: '../src/assets/L10.jpg' },
-    { id: 11, category: 'lighting', title: 'Bathroom Patio Lights', description: 'Weather-proof Bathroom lighting', tags: ['Bathroom', 'Patio', 'Weatherproof'], image: '../src/assets/L11.jpg' },
-    { id: 12, category: 'wall', title: 'Balcony Wall Panels', description: 'Decorative accent wall in outside', tags: ['Accent', 'Decorative', 'Bedroom'], image: '../src/assets/L12.jpg' },
+    { id: 1, category: 'pop', title: 'Modern Living Room POP', description: 'Contemporary POP ceiling with LED lighting', tags: ['Modern', 'LED', 'Living Room'], image: L1 },
+    { id: 2, category: 'tv', title: 'Minimalist TV Unit', description: 'Floating TV unit with hidden storage', tags: ['Minimalist', 'Storage', 'Modern'], image: L2 },
+    { id: 3, category: 'lighting', title: 'Ambient Bedroom Lighting', description: 'Soft lighting for bedroom ambiance', tags: ['Ambient', 'Bedroom', 'Warm'], image: L3 },
+    { id: 4, category: 'wall', title: '3D Feature Wall', description: 'Geometric 3D wall panels', tags: ['3D', 'Geometric', 'Feature Wall'], image: L4 },
+    { id: 5, category: 'pop', title: 'Traditional POP Design', description: 'Classic POP ceiling with intricate patterns', tags: ['Traditional', 'Pattern', 'Classic'], image: L5 },
+    { id: 6, category: 'tv', title: 'Entertainment Wall Unit', description: 'Complete entertainment wall with shelves', tags: ['Entertainment', 'Shelves', 'Complete'], image: L6 },
+    { id: 7, category: 'lighting', title: 'Smart Home Lighting', description: 'Voice-controlled smart lighting system', tags: ['Smart', 'Voice Control', 'Modern'], image: L7 },
+    { id: 8, category: 'commercial', title: 'Office POP Ceiling', description: 'Corporate office ceiling design', tags: ['Commercial', 'Office', 'Professional'], image: L9 },
+    { id: 9, category: 'pop', title: 'Kitchen POP with Lighting', description: 'Functional kitchen ceiling with task lighting', tags: ['Kitchen', 'Task Lighting', 'Functional'], image: L8 },
+    { id: 10, category: 'tv', title: 'Corner TV Unit', description: 'Space-saving corner TV installation', tags: ['Corner', 'Space Saving', 'Compact'], image: L10 },
+    { id: 11, category: 'lighting', title: 'Bathroom Patio Lights', description: 'Weather-proof Bathroom lighting', tags: ['Bathroom', 'Patio', 'Weatherproof'], image: L11 },
+    { id: 12, category: 'wall', title: 'Balcony Wall Panels', description: 'Decorative accent wall in outside', tags: ['Accent', 'Decorative', 'Bedroom'], image: L12 },
   ];
 
   useEffect(() => {
