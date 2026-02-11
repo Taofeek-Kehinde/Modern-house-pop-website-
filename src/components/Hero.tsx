@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import './Hero.css';
-import homeVideo from '../assets/Home.mp4';
+import homeVideo from '../assets/About.mp4';
 
 const Hero = () => {
   const textVariants = {
